@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vproapp
+  labels:
+       app: vproappippa
+spec:
+  containers:
+  - name: appcontainer
+    image: sandmanad/vprofileapp
+    ports:
+    - name: vproapp-port
+      containerPort: 8080
